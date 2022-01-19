@@ -15,6 +15,8 @@ AHelloSphere::AHelloSphere()
 	USphereComponent* SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("RootComponent"));
 
 	RootComponent = SphereComponent;
+	
+	//구체 컴포넌트에 속성을 적용한다.
 	SphereComponent->InitSphereRadius(220.0f);
 	SphereComponent->SetCollisionProfileName(TEXT("OverlapAllDynamic"));
 
